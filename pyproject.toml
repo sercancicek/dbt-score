@@ -45,7 +45,7 @@ dev = [
     "tox~=4.13",
 ]
 lint = [
-    "ruff~=0.2.2",
+    "ruff~=0.14.1",
     "mypy~=1.8",
 ]
 test = [
@@ -54,7 +54,7 @@ test = [
 ]
 docs = [
     "mkdocs-material~=9.5",
-    "mkdocstrings[python]~=0.26.0"
+    "mkdocstrings[python]~=0.30.1"
 ]
 
 ### Mypy ###

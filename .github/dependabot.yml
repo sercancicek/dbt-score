@@ -1,18 +1,11 @@
+---
 version: 2
-
-multi-ecosystem-groups:
-  python:
-    schedule:
-      interval: "daily"
-
 updates:
   - package-ecosystem: "pip"
     directory: "/"
-    multi-ecosystem-group: "python"
-    patterns: ["*"]
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 25
+    commit-message:
+      prefix: "deps"
     versioning-strategy: increase
-
-  - package-ecosystem: "uv"
-    directory: "/"
-    multi-ecosystem-group: "python"
-    patterns: ["*"]
